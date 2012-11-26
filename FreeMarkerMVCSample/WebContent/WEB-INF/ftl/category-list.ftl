@@ -7,5 +7,5 @@
 	    <tr>
 	        <td>${category.name}</td>
 	    </tr>
-    </#list>  
+    </#list>
 </table>
