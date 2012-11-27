@@ -3,9 +3,9 @@
        <th>Name</th>
     </tr>
     
-    <#list model["list"] as category>
+    <#list model["list"] as banner>
 	    <tr>
-	        <td>${category.name}</td>
+	        <td>${banner.name}</td>
 	    </tr>
     </#list>
 </table>

@@ -21,7 +21,6 @@
 			text-align:center;
 			padding:4px;
 			text-decoration:none;
-			text-transform:uppercase;
 		}
 	
 		a:hover,a:active {
@@ -36,8 +35,9 @@
 			$(document).ready(function() {
 			
 				$("#ul-menu li a").click(function() {
+				   
 				   $.ajax({
-					  url: "categories.html"
+					  url: $(this).attr("href")
 					}).done(function(data) { 
 					  $("#div-content").html(data);
 					});
@@ -52,18 +52,18 @@
     <body style="width:100%;height:100%">
         
     	<div id="div-header">
-    	   <#include "layout/header.ftl"/>
+    	   <#include "header.ftl"/>
     	</div>
     	
     	<div id="div-menu">
-    	   <#include "layout/menu.ftl"/>
+    	   <#include "menu.ftl"/>
     	</div>
     	
     	<div id="div-content">
     	</div>
     	
     	<div id="div-footer">
-    	   <#include "layout/footer.ftl"/>
+    	   <#include "footer.ftl"/>
     	</div>
     </body>
     

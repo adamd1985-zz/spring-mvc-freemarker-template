@@ -3,9 +3,9 @@
        <th>Name</th>
     </tr>
     
-    <#list model["list"] as category>
+    <#list model["list"] as facet>
 	    <tr>
-	        <td>${category.name}</td>
+	        <td>${facet.name}</td>
 	    </tr>
     </#list>
 </table>

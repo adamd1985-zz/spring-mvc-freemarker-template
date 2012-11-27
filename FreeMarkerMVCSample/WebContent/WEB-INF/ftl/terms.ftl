@@ -1,4 +1,11 @@
-<#import "layout/layout.ftl" as layout>
-<@layout.myLayout>
-	<#include "term-list.ftl"/>
-</@layout.myLayout>
+<table class="datatable">
+    <tr>
+       <th>Name</th>
+    </tr>
+    
+    <#list model["list"] as term>
+	    <tr>
+	        <td>${term.name}</td>
+	    </tr>
+    </#list>
+</table>
